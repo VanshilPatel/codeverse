@@ -1,11 +1,32 @@
 import React from "react";
+import Home from "./components/Home";
+import Submissions from "./components/Submissions";
+import {RouterProvider, createBrowserRouter} from "react-router-dom"
+
+
+const appRouter = createBrowserRouter([
+  {
+    path : "/",
+    element : <Home/>,
+    children : [
+      {
+        path : "/",
+        element : <Home/>
+      },
+      {
+        path : "/submissions",
+        element : <Submissions/>
+      },
+    ]
+  }
+])
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <RouterProvider router={appRouter}/>
     </div>
-  );
+  )
 };
 
 export default App;
