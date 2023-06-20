@@ -4,10 +4,10 @@ import RightContainer from "./RightContainer";
 
 const Submissions = () => {
   return (
-    <>
+    <div className="flex">
      <LeftContainer/>
      <RightContainer/>
-    </>
+    </div>
   );
 };
 

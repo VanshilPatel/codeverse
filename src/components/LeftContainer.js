@@ -3,9 +3,9 @@ import ProblemDescription from './ProblemDescription'
 
 const LeftContainer = () => {
   return (
-    <div>
+    <div className='border rounded-xl w-1/2 h-screen mt-14'>
        <ProblemDescription/>
-       <h1>Hello this is me Vanshil </h1>
+      
     </div>
   )
 }
